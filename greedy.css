@@ -1,0 +1,55 @@
+.greedy .cake .layer:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+.greedy .cake .layer .slice {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.greedy .cake .layer .slice.slice-quarter {
+    width: 25%;
+}
+.greedy .cake .layer .slice.slice-third {
+    width: 33.33333333%;
+}
+.greedy .cake .layer .slice.slice-half {
+    width: 50%;
+}
+.greedy .cake.coat {
+    padding: 20px;
+}
+.greedy .cake.gutter .layer {
+    margin: 20px -10px;
+}
+.greedy .cake.gutter .layer .slice {
+    padding: 0 10px;
+}
+.greedy .cake.gutter.coat .layer:first-child {
+    margin-top: 0;
+}
+.greedy .cake.gutter.coat .layer:last-child {
+    margin-bottom: 0;
+}
+@media (max-width: 767px) {
+    .greedy .cake .layer .slice {
+        float: none;
+        width: 100% !important;
+    }
+    .greedy .cake.gutter .layer {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+    .greedy .cake.gutter .layer .slice {
+        margin: 20px 0;
+    }
+    .greedy .cake.gutter .layer + .layer .slice:first-child,
+    .greedy .cake.gutter .layer:first-child .slice:first-child {
+        margin-top: 0;
+    }
+    .greedy .cake.gutter .layer:last-child .slice:last-child {
+        margin-bottom: 0;
+    }
+}

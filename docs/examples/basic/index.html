@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Greedy basic examples</title>
+        <link rel="stylesheet" href="../../../greedy.css" type="text/css">
+    </head>
+    <body>
+        <style>
+            html, body {
+                background: #f5efe6;
+                margin: 0;
+                padding: 0;
+            }
+            .content {
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 0 20px;
+            }
+            .content > div {
+                margin-bottom: 70px;
+            }
+            .content .tile {
+                background: #ffffff;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+            }
+
+            /* Greedy customization (colors, gutters etc.) */
+            .greedy .cake {
+                background: #dcd9d3;
+            }
+            .greedy .cake.gutter.gutter-8px .layer {
+                margin: 8px -4px;
+            }
+            .greedy .cake.gutter.gutter-8px .layer .slice {
+                padding: 0 4px;
+            }
+            .greedy .cake.gutter.gutter-8px.coat {
+                padding: 8px;
+            }
+            @media (max-width: 767px) {
+                .greedy .cake.gutter.gutter-8px .layer .slice {
+                    margin: 8px 0;
+                }
+            }
+        </style>
+        <div class="content">
+            <h1>Greedy basic examples</h1>
+            <h2>Default</h2>
+            <div class="greedy">
+                <div class="cake">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="tile"><b>100%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="tile"><b>50%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>With gutters (20px)</h2>
+            <div class="greedy">
+                <div class="cake gutter">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="tile"><b>100%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="tile"><b>50%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>With custom gutters (8px)</h2>
+            <div class="greedy">
+                <div class="cake gutter gutter-8px">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="tile"><b>100%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="tile"><b>50%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Coated</h2>
+            <div class="greedy">
+                <div class="cake coat">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="tile"><b>100%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="tile"><b>50%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Coated with gutters (20px)</h2>
+            <div class="greedy">
+                <div class="cake coat gutter">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="tile"><b>100%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="tile"><b>50%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Coated with custom gutters (8px)</h2>
+            <div class="greedy">
+                <div class="cake coat gutter gutter-8px">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="tile"><b>100%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="tile"><b>50%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="tile"><b>25%</b></div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="tile"><b>33%</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

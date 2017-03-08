@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Greedy board example</title>
+        <link rel="stylesheet" href="../../../greedy.css" type="text/css">
+    </head>
+    <body>
+        <style>
+            html, body {
+                background: #f5efe6;
+                margin: 0;
+                padding: 0;
+            }
+            .content {
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 0 20px;
+            }
+            .content > div {
+                margin-bottom: 70px;
+            }
+            .content .board {
+                background: #ffffff;
+                border: 1px solid #dcd9d3;
+            }
+            .content .board .post-it {
+                background: #ffffcc;
+                color: #666666;
+                padding: 4px 16px;
+            }
+
+            /* Greedy customization (colors, gutters etc.) */
+            .greedy .cake.gutter.gutter-3em .layer {
+                margin: 3em -1.5em;
+            }
+            .greedy .cake.gutter.gutter-3em .layer .slice {
+                padding: 0 1.5em;
+            }
+            .greedy .cake.gutter.gutter-3em.coat {
+                padding: 3em;
+            }
+            @media (max-width: 767px) {
+                .greedy .cake.gutter.gutter-3em .layer .slice {
+                    margin: 3em 0;
+                }
+            }
+        </style>
+        <div class="content">
+            <h1>Greedy board example</h1>
+            <h2>Post-it&reg; like board with 3em gutters</h2>
+            <div class="greedy">
+                <div class="board cake coat gutter gutter-3em">
+                    <div class="layer">
+                        <div class="slice">
+                            <div class="post-it">
+                                <p><b>.slice</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="post-it">
+                                <p><b>.slice.slice-half</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-half">
+                            <div class="post-it">
+                                <p><b>.slice.slice-half</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus. Praesent imperdiet ex eu turpis interdum scelerisque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-third">
+                            <div class="post-it">
+                                <p><b>.slice.slice-third</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="post-it">
+                                <p><b>.slice.slice-third</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus. Praesent imperdiet ex eu turpis interdum scelerisque.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-third">
+                            <div class="post-it">
+                                <p><b>.slice.slice-third</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-quarter">
+                            <div class="post-it">
+                                <p><b>.slice.slice-quarter</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="post-it">
+                                <p><b>.slice.slice-quarter</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus. Praesent imperdiet ex eu turpis interdum scelerisque.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="post-it">
+                                <p><b>.slice.slice-quarter</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="post-it">
+                                <p><b>.slice.slice-quarter</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <div class="slice slice-half">
+                            <div class="post-it">
+                                <p><b>.slice.slice-half</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus. Praesent imperdiet ex eu turpis interdum scelerisque.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="post-it">
+                                <p><b>.slice.slice-quarter</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus. Nam eu elementum eros, ut pellentesque tellus.</p>
+                            </div>
+                        </div>
+                        <div class="slice slice-quarter">
+                            <div class="post-it">
+                                <p><b>.slice.slice-quarter</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus metus, dignissim pulvinar odio et, aliquet varius ipsum. Vivamus malesuada augue ullamcorper lacinia finibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
