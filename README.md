@@ -87,5 +87,21 @@ Then, override Greedy CSS into your stylesheet as follow:
 
 ## Examples
 
-- [Basic examples](https://github.com/davidloubere/greedy/blob/master/docs/examples/basic/index.html)
-- [Board example](https://github.com/davidloubere/greedy/blob/master/docs/examples/board/index.html)
+### Basic examples
+
+- Default
+- With gutters (20px)
+- With custom gutters (8px)
+- Coated
+- Coated with gutters (20px)
+- Coated with custom gutters (8px)
+
+[source](https://github.com/davidloubere/greedy/blob/master/docs/examples/basic/index.html)
+[demo](https://cdn.rawgit.com/davidloubere/greedy/d4f4c4c8/docs/examples/basic/index.html)
+
+### Board example
+
+Post-it® like board with 3em gutters
+
+[source](https://github.com/davidloubere/greedy/blob/master/docs/examples/board/index.html)
+[demo](https://cdn.rawgit.com/davidloubere/greedy/d4f4c4c8/docs/examples/board/index.html)
