@@ -63,6 +63,8 @@ You can apply coating and gutters options together:
 
 ### Customization
 
+#### Using a custom class
+
 To customize gutters (including coating), begin with defining a custom class (`.gutter-8px` for instance) and add it to your markup:
 ```html
 <div class="cake coat gutter gutter-8px">
@@ -80,6 +82,25 @@ Then, override Greedy CSS into your stylesheet as follow:
 }
 @media (max-width: 767px) {
     .greedy .cake.gutter.gutter-8px .layer .slice {
+        margin: 8px 0;
+    }
+}
+```
+
+#### Full overriding
+
+```css
+.greedy .cake.gutter .layer {
+    margin: 8px -4px;
+}
+.greedy .cake.gutter .layer .slice {
+    padding: 0 4px;
+}
+.greedy .cake.gutter.coat {
+    padding: 8px;
+}
+@media (max-width: 767px) {
+    .greedy .cake.gutter .layer .slice {
         margin: 8px 0;
     }
 }
