@@ -10,20 +10,26 @@
     min-height: 1px;
     width: 100%;
 }
-.greedy .cake .layer .slice.slice-quarter {
-    width: 25%;
-}
 .greedy .cake .layer .slice.slice-three-quarter {
     width: 75%;
-}
-.greedy .cake .layer .slice.slice-third {
-    width: 33.33333333%;
 }
 .greedy .cake .layer .slice.slice-two-third {
     width: 66.66666666%;
 }
+.greedy .cake .layer .slice.slice-three-fifth {
+    width: 60%;
+}
 .greedy .cake .layer .slice.slice-half {
     width: 50%;
+}
+.greedy .cake .layer .slice.slice-third {
+    width: 33.33333333%;
+}
+.greedy .cake .layer .slice.slice-quarter {
+    width: 25%;
+}
+.greedy .cake .layer .slice.slice-fifth {
+    width: 20%;
 }
 .greedy .cake.coat {
     padding: 20px;
